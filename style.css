@@ -23,47 +23,48 @@ header {
     position: sticky;
     top: 0;
     background: #fff;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #222; 
     z-index: 10;
 }
 
-header nav {
+nav {
     width: 90%;
     margin: 0 5%;
     padding: 1.5% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2%;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 1%;
-    font-weight: bold;
+    flex-shrink: 0;
 }
 
-.mark {
-    width: 2.4rem;
-    height: 2.4rem;
-    border: 1px solid #222;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: #111;
-    color: #fff;
+.logo img {
+    width: 100%;
+    max-width: 10%;
 }
 
-.links {
-    flex: 1;
+nav ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     justify-content: center;
-    gap: 4%;
+    gap: 6%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
 }
 
-.links a {
-    padding: 0.5% 0;
+nav li a {
+    font-size: 120%;
+    font-weight: 500;
 }
 
 .btn {
@@ -71,6 +72,9 @@ header nav {
     border: 1px solid #222;
     padding: 1% 2%;
     background: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    flex-shrink: 0;
 }
 
 .dark {
@@ -84,32 +88,29 @@ main {
 }
 
 section {
-    padding: 3% 0;
+    padding-top: 4%;
+    padding-bottom: 0;
+    margin-bottom: 10%;
 }
 
-.hero,
-.supporthero {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4%;
 }
 
-.hero .text,
-.hero .art,
-.supporthero .text,
-.supporthero .search {
+.hero div {
     flex: 1;
 }
 
-.hero .text p,
-.supporthero .text p,
-.box p,
-.row p,
-.essay p,
-.materials p,
-footer p,
-footer li {
+.hero img {
+    margin-left: 15%;
+    width: 70%;
+    max-width: 100%;
+}
+
+.hero p {
     line-height: 1.6;
 }
 
@@ -150,48 +151,46 @@ footer li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%;
+    margin-top: 2%;
 }
 
-.box {
+article {
     background: #fff;
     border: 1px solid #222;
     padding: 2%;
     box-shadow: 4px 4px 0 #bbb;
 }
 
+article p {
+    line-height: 1.6;
+    margin: 1% 0;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
 .row {
     display: flex;
     align-items: center;
     gap: 3%;
-    margin-bottom: 2%;
+    margin: 2% 0;
 }
 
 .reverse {
     flex-direction: row-reverse;
 }
 
-.pic,
-.materials .image {
+.row div {
     flex: 1;
 }
 
-.textblock,
-.materials .text {
-    flex: 1;
-}
-
-.pic img,
-.materials .image img {
+.row img {
     border: 1px solid #222;
 }
 
-.steps {
-    display: flex;
-    gap: 2%;
-}
-
-.steps .box {
-    flex: 1;
+.row p {
+    line-height: 1.6;
 }
 
 .cta-box {
@@ -201,24 +200,26 @@ footer li {
     padding: 3%;
 }
 
-.shophero,
-.storyhero,
-.supporthero,
-.menu,
-.essay,
-.materials,
-.faq,
-.trust {
+main section:first-child {
+    text-align: center;
     background: #fff;
     border: 1px solid #222;
     padding: 2%;
 }
 
-.shophero {
-    text-align: center;
+main section:nth-child(3) {
+    background: #fff;
+    border: 1px solid #222;
+    padding: 2%;
 }
 
-.big {
+main section:nth-child(4) {
+    background: #fff;
+    border: 1px solid #222;
+    padding: 2%;
+}
+
+.featured {
     transform: scale(1.05);
 }
 
@@ -229,89 +230,58 @@ footer li {
     margin-bottom: 2%;
 }
 
-.filters button {
+button {
     font: inherit;
     border: 1px solid #222;
     background: #fff;
-    padding: 0.8% 1.3%;
+    padding: 1% 1.5%;
+    cursor: pointer;
 }
 
-.trust {
+main section:last-child {
     display: flex;
     gap: 2%;
     background: #222;
     color: #fff;
+    padding: 2%;
 }
 
-.trust div {
+main section:last-child div {
     flex: 1;
     text-align: center;
 }
 
-.storyhero {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+main section:last-child p {
+    line-height: 1.6;
 }
 
-.essay {
-    width: 70%;
-    margin: 0 15%;
-}
-
-.materials .pair {
+.pair {
     display: flex;
     gap: 3%;
     align-items: center;
 }
 
-.materials .image {
-    flex: 4;
+.pair div {
+    flex: 1;
 }
 
-.materials .text {
-    flex: 6;
+.pair p {
+    line-height: 1.6;
 }
 
-.search {
-    width: 35%;
-}
-
-.search input {
-    width: 100%;
-    padding: 2%;
-    border: 1px solid #222;
-}
-
-.menu {
-    display: flex;
-    gap: 2%;
-}
-
-.menu a {
-    display: inline-block;
-    border: 1px solid #222;
-    padding: 1% 2%;
-    background: #fff;
-}
-
-.guide .row {
+section#inicio .row {
     align-items: flex-start;
     background: #fff;
     border: 1px solid #222;
     padding: 2%;
 }
 
-.guide img {
+section#inicio img {
     width: 30%;
     border: 1px solid #222;
 }
 
-.faq details {
+section#faq details {
     border: 1px solid #222;
     padding: 1.5% 2%;
     margin-bottom: 1%;
@@ -340,4 +310,57 @@ footer ul {
 
 footer li {
     margin-bottom: 1%;
+    line-height: 1.6;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+.storyhero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.menu {
+    display: flex;
+    gap: 2%;
+    background: #fff;
+    border: 1px solid #222;
+    padding: 2%;
+}
+
+.menu a {
+    display: inline-block;
+    border: 1px solid #222;
+    padding: 1% 2%;
+    background: #fff;
+    flex: 1;
+    text-align: center;
+}
+
+.menu a:hover {
+    background: #222;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #222;
+}
+
+main section:nth-child(2) {
+    background: #fff;
+    border: 1px solid #222;
+    padding: 3%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.8;
 }
