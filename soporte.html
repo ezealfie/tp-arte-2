@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <nav>
         <a class="logo" href="index.html">
             <img src="img/logo.png" alt="SyncNote">
         </a>
-
         <div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -22,45 +20,43 @@
                 <li><a href="soporte.html">Soporte</a></li>
             </ul>
         </div>
-
-        <a class="btn dark" href="tienda.html">Comprar</a>
+        <a class="boton-oscuro" href="tienda.html">Comprar</a>
     </nav>
 </header>
-
 <main>
     <section>
         <div>
             <h1>Soporte y guía de uso</h1>
             <p>Encontrá ayuda rápida para empezar y resolver dudas.</p>
         </div>
-        <div>
-            <input type="text" placeholder="Buscar ayuda">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar ayuda...">
         </div>
     </section>
 
-    <section class="menu">
+    <section class="menu-soporte">
         <a href="#inicio">Guía de inicio</a>
         <a href="#faq">FAQ</a>
         <a href="#envio">Envíos</a>
     </section>
 
-    <section id="inicio">
+    <section id="inicio" class="inicio-pasos">
         <h2>Guía de inicio</h2>
-        <div class="row">
+        <div>
             <img src="img/photo-1516321318423-f06f85e504b3.avif" alt="Paso 1">
             <div>
                 <h3>1. Preparar el cuaderno</h3>
                 <p>Escribí tus tareas, citas y notas con la simbología que prefieras.</p>
             </div>
         </div>
-        <div class="row">
+        <div>
             <img src="img/photo-1497366754035-f200968a6e72.avif" alt="Paso 2">
             <div>
                 <h3>2. Tocar con el móvil</h3>
                 <p>Acercá el teléfono al chip NFC para abrir la app complementaria.</p>
             </div>
         </div>
-        <div class="row">
+        <div>
             <img src="img/photo-1522202176988-66273c2fd55f.avif" alt="Paso 3">
             <div>
                 <h3>3. Sincronizar</h3>
@@ -69,22 +65,20 @@
         </div>
     </section>
 
-
-
-    <section id="faq">
+    <section class="faq" id="faq">
         <h2>Preguntas frecuentes</h2>
-        <details>
-            <summary>¿El chip NFC necesita batería?</summary>
+        <div>
+            <h4>¿El chip NFC necesita batería?</h4>
             <p>No. Funciona con la energía que emite el teléfono al acercarlo.</p>
-        </details>
-        <details>
-            <summary>¿Puedo usar Google Calendar?</summary>
+        </div>
+        <div>
+            <h4>¿Puedo usar Google Calendar?</h4>
             <p>Sí. La sincronización está pensada para Google Calendar y otras apps.</p>
-        </details>
-        <details>
-            <summary>¿Hay recambios de papel?</summary>
+        </div>
+        <div>
+            <h4>¿Hay recambios de papel?</h4>
             <p>Sí. La cubierta se reutiliza y se compran recambios cuando hacen falta.</p>
-        </details>
+        </div>
     </section>
 
     <section id="envio">
@@ -92,9 +86,8 @@
         <p>Los pedidos se preparan en 48 horas y el soporte te acompaña si surge algún problema.</p>
     </section>
 </main>
-
 <footer>
-    <div class="footer-inner">
+    <div>
         <div>
             <h3>SyncNote</h3>
             <p>Cuaderno NFC para trabajo profundo y organización simple.</p>
@@ -111,8 +104,8 @@
             <h3>Ayuda</h3>
             <ul>
                 <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="soporte.html">FAQ</a></li>
-                <li><a href="soporte.html">Guía</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#inicio">Guía</a></li>
             </ul>
         </div>
         <div>
@@ -124,6 +117,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

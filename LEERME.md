@@ -1,4 +1,4 @@
-REVISAR COSAS DEL CSS QUE NO SE USAN
-CORREGIR PADDING DE ALTURA
-PREGUNTAR SI SE PUEDE USAR HREF=# ID
-PREGUNTAR SI SE PUEDE USAR DETAILS
+CORREGIR Y FIJARSE IDS PARA <A HREF> (hay que ver si se ´puede)
+DESCARGAR FOTOS
+revisar impronta grafica landing (fotos tmb) experiencia de (por ejemplo zapas usanodse)
+SUBIR NETLIFY
