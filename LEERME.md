@@ -1,4 +1,5 @@
 CORREGIR Y FIJARSE IDS PARA <A HREF> (hay que ver si se ´puede)
 DESCARGAR FOTOS
-revisar impronta grafica landing (fotos tmb) experiencia de (por ejemplo zapas usanodse)
-SUBIR NETLIFY
+en tienda poner misma identidad abajo de todo y cambiar kits hacer largo para abajo
+revisar soporte
+hacer mas elegante manifiesto
