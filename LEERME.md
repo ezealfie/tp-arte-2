@@ -1,2 +1,0 @@
-CORREGIR Y FIJARSE IDS PARA <A HREF> (hay que ver si se ´puede)
-DESCARGAR FOTOS
