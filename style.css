@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
+    font-family: 'Inter', sans-serif;
+
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     color: #222;
     background-image: url(img/4096-520842CainWheatRiceTextureWallpaper_1024x1024.jpg);
 
@@ -178,6 +180,7 @@ article h3 {
 .filareverso p {
     line-height: 1.6;
 }
+
 .filareverso div {
     flex: 1;
     padding: 0 5%;
@@ -234,21 +237,39 @@ article h3 {
 
 .inicio-pasos div {
     display: flex;
-    align-items: flex-start;
-    background: #fff;
-    border: 1px solid #222;
-    padding: 2%;
-    gap: 2%;
-    margin-bottom: 1%;
+    align-items: center;
+    background-color: #F7F6F0;
+    padding: 1.5%;
+    gap: 2.5%;
+    margin-bottom: 1.5%;
     width: 100%;
+    border: none;
+    border-radius: 8px;
 
 }
 
 .inicio-pasos img {
     width: 30%;
-    border: 1px solid #222;
+    border: none;
+    border-radius: 4px;
 }
 
+
+.inicio-pasos h3 {
+    margin-top: 0;
+    margin-bottom: 0.5%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    color: #2C2C2C;
+}
+
+.inicio-pasos p {
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    color: #595959;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
 
 
 .faq div {
@@ -308,21 +329,72 @@ article h3 {
     line-height: 1.8;
 }
 
+.destacado {
+    font-style: italic;
+    font-weight: 400 !important;
+    margin-top: 3%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.seccion-manifiesto {
+    font-size: 1.125rem;
+    line-height: 1.85;
+    margin-bottom: 1.75%;
+    font-weight: 300;
+}
+
+
+
 .seccion-garantias {
     display: flex;
     gap: 2%;
-    background: #222;
-    color: #fff;
+    background-color: rgba(244, 241, 234, 0.72);
+    color: #222;
     padding: 2%;
 }
 
 .seccion-garantias div {
     flex: 1;
+    border: 1px solid black;
     text-align: center;
 }
 
 .seccion-garantias p {
     line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2% auto;
+}
+
+form div {
+    display: flex;
+    gap: 4%;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 2%;
+    width: 100%;
 }
 
 footer {
